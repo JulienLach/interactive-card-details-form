@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+
+
+/* CARD BACKGROUNDS */
+
+.front-card {
+    background-image: url(images/bg-card-front.png);
+    background-repeat: no-repeat;
+}
