@@ -6,8 +6,18 @@
 
 body {
     font-family: 'Space Grotesk', sans-serif;
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
 }
 
+
+.main {
+    display: flex;
+    width: 80%;
+    margin: 8em auto;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -16,4 +26,26 @@ body {
 .front-card {
     background-image: url(images/bg-card-front.png);
     background-repeat: no-repeat;
+    height: 250px;
+    width: 450px;
+}
+
+
+.back-card {
+    background-image: url(images/bg-card-back.png);
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 450px;
+}
+
+
+
+
+
+
+
+/* THANK YOU DIV */
+
+.thank-you {
+    display: none;
 }
