@@ -54,6 +54,12 @@ body {
     gap: 2em;
 }
 
+.mm-yy-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4em;
+}
+
 .expdate-text {
     display: flex;
     flex-direction: column;
@@ -146,8 +152,36 @@ input {
 
 /* THANK YOU DIV */
 
-.thank-you {
+.thank-you-off {
     display: none;
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+}
+
+.thank-you p:nth-child(1) {
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    color: hsl(278, 68%, 11%);
+}
+
+.thank-you p:nth-child(2) {
+    color: hsl(279, 6%, 55%);
+}
+
+.thank-button button {
+    width: 100%;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #FFF;
+    font-size: 1em;
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 0.5em;
+    border: none;
+    height: 3em;
 }
 
 
@@ -186,6 +220,7 @@ input {
         left: 20px;
         border-radius: 0.6em;
         padding: 1em;
+        border: 1px solid lightgray;
     }
 
     .forms {
@@ -195,6 +230,12 @@ input {
         width: 80%;
         margin: auto;
         margin-top: -250px;
+    }
+
+    .mm-yy-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4em;
     }
 
 }
@@ -207,4 +248,15 @@ input {
         top: 0;
         border-radius: 2em;
     }
+
+    .back-card {
+        border: none;
+    }
+}
+
+
+/* ACTIVE CLASSES */
+
+.thank-you.off.active {
+    display: block;
 }
