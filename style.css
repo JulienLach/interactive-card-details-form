@@ -13,12 +13,45 @@ body {
 
 .main {
     display: flex;
-    width: 80%;
+    flex-direction: row;
     margin: 8em auto;
     justify-content: center;
     align-items: center;
+    gap: 5em;
 }
 
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.cardholder {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardnumber {
+    display: flex;
+    flex-direction: column;
+}
+
+.expdate {
+    display: flex;
+}
+
+.expdate-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.cvc-number {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* CARD BACKGROUNDS */
@@ -28,6 +61,11 @@ body {
     background-repeat: no-repeat;
     height: 250px;
     width: 450px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    color: #FFF;
 }
 
 
@@ -36,10 +74,30 @@ body {
     background-repeat: no-repeat;
     height: 250px;
     width: 450px;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    padding: 4em;
+    color: #FFF;
+}
+
+.card-number {
+    font-size: 2em;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
 }
 
 
+/* FORM */
 
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
 
 
 
@@ -48,4 +106,19 @@ body {
 
 .thank-you {
     display: none;
+}
+
+
+/* MEDIA QUERIES */
+
+@media(max-width: 850px) {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin: 8em auto;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+    }
 }
