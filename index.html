@@ -18,6 +18,9 @@
 
   <section>
     <div class="container">
+      <div class="mobile-bg">
+        <img src="images/bg-main-mobile.png" alt="">
+      </div>
       <div class="main">
         <div class="cards">
           <div class="front-card">
@@ -44,24 +47,27 @@
           <div class="forms">
             <form class="cardholder" action="">
               <label for="name">CARDHOLDER NAME</label>
-              <input type="text">
+              <input type="text" placeholder="e.g. Jane Appleseed">
             </form>
             <form class="cardnumber" action="">
               <label for="name">CARD NUMBER</label>
-              <input type="text">
+              <input type="text" placeholder="e.g. 1243 5678 9123 0000">
             </form>
             <form class="expdate" action="">
               <div class="expdate-text">
                 <label for="name">EXP. DATE (MM/YY)</label>
-                <input type="text">
+                <div class="mm-yy-flex">
+                  <input type="text" placeholder="MM">
+                  <input type="text" placeholder="YY">
+                </div>
               </div>
               <div class="cvc-number">
                 <label for="name">CVC</label>
-                <input type="text">
+                <input type="text" placeholder="e.g. 123">
               </div>
             </form>
             <form action="">
-              <input type="submit" value="CONFIRM">
+              <input class="submit-button" type="submit" value="Confirm">
             </form>
           </div>
           <div class="thank-you">

@@ -10,6 +10,9 @@ body {
     background-repeat: no-repeat;
 }
 
+.mobile-bg {
+    display: none;
+}
 
 .main {
     display: flex;
@@ -29,6 +32,12 @@ body {
     gap: 2em;
 }
 
+.forms label {
+    color: hsl(278, 68%, 11%);
+    letter-spacing: 0.1em;
+    padding-bottom: 0.8em;
+}
+
 .cardholder {
     display: flex;
     flex-direction: column;
@@ -41,6 +50,8 @@ body {
 
 .expdate {
     display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
 }
 
 .expdate-text {
@@ -53,6 +64,13 @@ body {
     flex-direction: column;
 }
 
+
+input {
+    height: 3em;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 0.3em;
+
+}
 
 /* CARD BACKGROUNDS */
 
@@ -90,13 +108,37 @@ body {
     justify-content: space-between;
 }
 
+.card-name {
+    letter-spacing: 0.1em;
+}
 
 /* FORM */
 
 .forms {
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 2em;
+    width: 80%;
+}
+
+.submit-button {
+    width: 100%;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #FFF;
+    font-size: 1em;
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 0.5em;
+}
+
+input::placeholder {
+    font-family: 'Space Grotesk', sans-serif;
+    color: hsl(0, 0%, 68%);
+    padding-left: 1em;
+}
+
+input {
+    padding-left: 1em;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 
@@ -113,6 +155,10 @@ body {
 
 @media(max-width: 850px) {
 
+    body {
+        background-image: none;
+    }
+
     .main {
         display: flex;
         flex-direction: column;
@@ -120,5 +166,45 @@ body {
         justify-content: center;
         align-items: center;
         gap: 5em;
+    }
+
+    .front-card {
+        position: relative;
+        width: 90%;
+        height: 244px;
+        border-radius: 0.6em;
+        padding: 1em;
+        top: 50px;
+        left: 10px;
+    }
+
+    .back-card {
+        position: relative;
+        z-index: -100;
+        width: 90%;
+        top: -370px;
+        left: 20px;
+        border-radius: 0.6em;
+        padding: 1em;
+    }
+
+    .forms {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        width: 80%;
+        margin: auto;
+        margin-top: -250px;
+    }
+
+}
+
+@media(max-width:375px) {
+    .mobile-bg {
+        display: block;
+        position: absolute;
+        z-index: -100;
+        top: 0;
+        border-radius: 2em;
     }
 }
